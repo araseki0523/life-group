@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .header {
-    height: rem(110);
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -9,6 +9,9 @@
     z-index: 999;
     width: 100vw;
     background-color: #fff;
+    @include mq(md) {
+        height: rem(110);
+    }
 }
 
 .header__inner {
@@ -23,9 +26,12 @@
 }
 
 .header__logo {
-    max-width: rem(210);
+    max-width: 147px;
     width: 100%;
     margin-right: auto;
+    @include mq(md) {
+        max-width: rem(210);
+    }
 }
 
 .header__logo img {

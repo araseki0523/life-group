@@ -2,16 +2,25 @@
 <main>
 
   <!-- MV -->
-  <section class="mv panel layout-mv">
+  <section class="mv layout-mv">
     <div class="mv__inner">
       <div class="swiper js-swiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv01.jpg" alt="高度専門領域を繋ぎ全ての人のQOL向上と新たな価値を共創。">
-          </div>
-          <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv02.jpg" alt="高度専門領域を繋ぎ全ての人のQOL向上と新たな価値を共創。">
-          </div>
-          <div class="swiper-slide"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv03.jpg" alt="高度専門領域を繋ぎ全ての人のQOL向上と新たな価値を共創。">
-          </div>
+          <picture class="swiper-slide">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sp-img_top_mv01.jpg">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv01.jpg" media="(min-width: 769px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv01.jpg" alt="高度専門領域を繋ぎ全ての人のQOL向上と新たな価値を共創。">
+          </picture>
+          <picture class="swiper-slide">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sp-img_top_mv02.jpg">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv02.jpg" media="(min-width: 769px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv02.jpg" alt="高度専門領域を繋ぎ全ての人のQOL向上と新たな価値を共創。">
+          </picture>
+          <picture class="swiper-slide">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/sp-img_top_mv03.jpg">
+            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv03.jpg" media="(min-width: 769px)">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_mv03.jpg" alt="高度専門領域を繋ぎ全ての人のQOL向上と新たな価値を共創。">
+          </picture>
         </div>
       </div>
       <div class="mv__message-overlay">
@@ -35,11 +44,11 @@
   </section>
 
   <!-- 価値共創セクション -->
-  <section class="co-creation panel layout-co-creation">
+  <section class="co-creation layout-co-creation">
     <div class="co-creation__inner">
       <div class="co-creation__contents">
         <h2 class="co-creation__ttl">
-          <img src="/assets/img/top/img_top_creation.svg" alt="価値共創">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_creation.svg" alt="価値共創">
         </h2>
         <p class="co-creation__text">
           顧客と企業が共創する場を作り<br>
@@ -70,27 +79,28 @@
           </p>
         </div>
       </div>
-      <div class="about-us__img-main-message">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ttl_top_about_group_enterprise.png" alt="グループエンタープライズ">
-      </div>
-
+        <div class="about-us__img-main-message">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/ttl_top_about_group_enterprise.png" alt="グループエンタープライズ">
+        </div>
       <!-- serviceコンテンツ始-->
       <div class="about-us__service-inner">
         <div class="about-us__wrapper1">
-          <h3 class="about-us__sub-ttl">service</h3>
-          <div class="about-us__service-contents">
-            <div class="about-us__service-introduction">
-              <div class="about-us__service-ttl">株式会社TUBAKI不動産</div>
-              <p class="about-us__service-text1">不動産コンサルティング / 不動産売買仲介 / 新築建売分譲 / 空き家買取り・再生 / 空き家管理 / リースバック</p>
-              <div class="about-us__service-ttl">行政書士法人ライフ</div>
-              <p class="about-us__service-text2">一般社団法人広島シルバーライフ協会・一般社団法人いきいきライフ協会</p>
-              <p class="about-us__service-text3">相続人確定 / 相続手続き / 遺言作成 / 家族信託 / 任意後見制度</p>
-              <div class="about-us__service-ttl">株式会社ライフプラス</div>
-              <p class="about-us__service-text4">宅地建物取引 / 老人施設紹介</p>
-            </div>
-            <div class="about-us__img-triangle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_about_triangle.png" alt="各法人との提携">
-            </div>
+          <div class="about-us__img-triangle"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_about_triangle.png" alt="各法人との提携">
           </div>
+          <div class="about-us__about-us__service-contents">
+            <h3 class="about-us__sub-ttl">service</h3>
+            <div class="about-us__service-content">
+              <div class="about-us__service-introduction">
+                <div class="about-us__service-ttl">株式会社TUBAKI不動産</div>
+                <p class="about-us__service-text1">不動産コンサルティング / 不動産売買仲介 / 新築建売分譲 / 空き家買取り・再生 / 空き家管理 / リースバック</p>
+                <div class="about-us__service-ttl">行政書士法人ライフ</div>
+                <p class="about-us__service-text2">一般社団法人広島シルバーライフ協会・一般社団法人いきいきライフ協会</p>
+                <p class="about-us__service-text3">相続人確定 / 相続手続き / 遺言作成 / 家族信託 / 任意後見制度</p>
+                <div class="about-us__service-ttl">株式会社ライフプラス</div>
+                <p class="about-us__service-text4">宅地建物取引 / 老人施設紹介</p>
+              </div>
+            </div>
+          </div><!-- /.about-us__about-us__service-contents -->
         </div>
       </div>
       <!-- serviceコンテンツ終 -->
@@ -141,134 +151,134 @@
       <!-- messageコンテンツ終 -->
 
     </section>
-  </div><!-- /.co-creation__wrap -->
 
 
-  <!-- VISIONセクション -->
-  <section class="vision layout-vision">
-    <div class="vision__inner">
-      <div class="vision__contents">
-        <h2 class="vision__ttl">vision</h2>
-        <p class="vision__text">
-          30期を目指した新たな船出。<br>
-          組織の力を結集し次世代を担うリーダー達と挑み戦い続けることで、<br>
-          VUCAと呼ばれる時代を切り拓く先導者となる。
-        </p>
-        <div class="vision__button-area">
-          <a href="" class="vision__button-top button-top">
+
+    <!-- VISIONセクション -->
+    <section class="vision layout-vision">
+      <div class="vision__inner">
+        <div class="vision__contents">
+          <h2 class="vision__ttl">vision</h2>
+          <p class="vision__text">
+            30期を目指した新たな船出。<br>
+            組織の力を結集し次世代を担うリーダー達と挑み戦い続けることで、<br>
+            VUCAと呼ばれる時代を切り拓く先導者となる。
+          </p>
+          <div class="vision__button-area">
+            <a href="" class="vision__button-top button-top">
+              <span class="button-top__arrow button-top__arrow--blue"></span>
+              <span class="button-top__arrow-text">view &emsp; more</span>
+            </a>
+          </div>
+        </div>
+      </div><!--vision__inner-->
+      <div class="vision__bg-white"></div>
+      <div class="vision__bg-blue"></div>
+    </section>
+
+    <!-- RECRUITセクション -->
+    <section class="recruit layout-recruit">
+      <div class="recruit__bg"></div>
+      <div class="recruit__inner">
+        <div class="recruit__contents">
+          <h2 class="recruit__ttl">recruit</h2>
+          <p class="recruit__text">
+            あなたの成長できる環境をご用意いたします。<br>
+            誠実で意欲のある方からのエントリーお待ちしております。</p>
+          <div class="recruit__button-area">
+            <a href="" class="recruit__button-top button-top">
+              <span class="button-top__arrow button-top__arrow--green"></span>
+              <span class="button-top__arrow-text">view &emsp; more</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSセクション -->
+    <section class="news layout-news">
+      <div class="news__inner">
+        <div class="news__contents">
+          <h2 class="news__ttl">news</h2>
+          <div class="news__item">
+            <date class="news__date">2011.04.01</date>
+            <div class="news__wrapper">
+              <p class="news__index">
+                ライフ｜ホームページリニューアルを行いました。
+                ライフ｜ホームページリニューアルを行いました。
+                ライフ｜ホームページリニューアルを行いました。
+                ライフ｜ホームページリニューアルを行いました。
+              </p>
+              <a href="" class="news__button-jump button-top-gray">
+                <span class="button-top-gray__arrow"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
+              </a>
+            </div>
+          </div>
+          <!-- /.news__item -->
+          <div class="news__item">
+            <date class="news__date">2011.04.01</date>
+            <div class="news__wrapper">
+              <p class="news__index">
+                ライフ｜ホームページリニューアルを行いました。
+                <!-- ライフ｜ホームページリニューアルを行いました。
+                ライフ｜ホームページリニューアルを行いました。
+                ライフ｜ホームページリニューアルを行いました。 -->
+              </p>
+              <a href="" class="news__button-jump button-top-gray">
+                <span class="button-top-gray__arrow"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
+              </a>
+            </div>
+          </div>
+          <!-- /.news__item -->
+        </div>
+        <div class="news__button-area">
+          <a href="" class="news__button-top button-top">
             <span class="button-top__arrow button-top__arrow--blue"></span>
             <span class="button-top__arrow-text">view &emsp; more</span>
           </a>
         </div>
       </div>
-    </div><!--vision__inner-->
-    <div class="vision__bg-white"></div>
-    <div class="vision__bg-blue"></div>
-  </section>
-
-  <!-- RECRUITセクション -->
-  <section class="recruit layout-recruit">
-    <div class="recruit__bg"></div>
-    <div class="recruit__inner">
-      <div class="recruit__contents">
-        <h2 class="recruit__ttl">recruit</h2>
-        <p class="recruit__text">
-          あなたの成長できる環境をご用意いたします。<br>
-          誠実で意欲のある方からのエントリーお待ちしております。</p>
-        <div class="recruit__button-area">
-          <a href="" class="recruit__button-top button-top">
-            <span class="button-top__arrow button-top__arrow--green"></span>
-            <span class="button-top__arrow-text">view &emsp; more</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- NEWSセクション -->
-  <section class="news layout-news">
-    <div class="news__inner">
-      <div class="news__contents">
-        <h2 class="news__ttl">news</h2>
-        <div class="news__item">
-          <date class="news__date">2011.04.01</date>
-          <div class="news__wrapper">
-            <p class="news__index">
-              ライフ｜ホームページリニューアルを行いました。
-              ライフ｜ホームページリニューアルを行いました。
-              ライフ｜ホームページリニューアルを行いました。
-              ライフ｜ホームページリニューアルを行いました。
-            </p>
-            <a href="" class="news__button-jump button-top-gray">
-              <span class="button-top-gray__arrow"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
-            </a>
-          </div>
-        </div>
-        <!-- /.news__item -->
-        <div class="news__item">
-          <date class="news__date">2011.04.01</date>
-          <div class="news__wrapper">
-            <p class="news__index">
-              ライフ｜ホームページリニューアルを行いました。
-              <!-- ライフ｜ホームページリニューアルを行いました。
-                ライフ｜ホームページリニューアルを行いました。
-                ライフ｜ホームページリニューアルを行いました。 -->
-            </p>
-            <a href="" class="news__button-jump button-top-gray">
-              <span class="button-top-gray__arrow"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt=""></span>
-            </a>
-          </div>
-        </div>
-        <!-- /.news__item -->
-      </div>
-      <div class="news__button-area">
-        <a href="" class="news__button-top button-top">
-          <span class="button-top__arrow button-top__arrow--blue"></span>
-          <span class="button-top__arrow-text">view &emsp; more</span>
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
 
-  <!-- 求人情報とお問い合わせセクション -->
-  <section class="inquiry layout-inquiry">
-    <div class="inquiry__inner">
-      <div class="inquiry__contents">
-        <div class="inquiry__wrapper-left">
-          <h3 class="inquiry__ttl">求人情報</h3>
-          <p class="inquiry__text">
-            ライフグループのビジョンに共感し、自身のバリューを
-            思う存分に発揮したい方のご応募をお待ちしております。</p>
-          <div class="inquiry__button-area">
-            <a href="" class="inquiry__button-jump button-top-gray">
-              <span class="button-top-gray__arrow">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt="">
-              </span>
-              <div class="inquiry__button-text">entry</div>
-            </a>
+    <!-- 求人情報とお問い合わせセクション -->
+    <section class="inquiry layout-inquiry">
+      <div class="inquiry__inner">
+        <div class="inquiry__contents">
+          <div class="inquiry__wrapper-left">
+            <h3 class="inquiry__ttl">求人情報</h3>
+            <p class="inquiry__text">
+              ライフグループのビジョンに共感し、自身のバリューを
+              思う存分に発揮したい方のご応募をお待ちしております。</p>
+            <div class="inquiry__button-area">
+              <a href="" class="inquiry__button-jump button-top-gray">
+                <span class="button-top-gray__arrow">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt="">
+                </span>
+                <div class="inquiry__button-text">entry</div>
+              </a>
+            </div>
           </div>
-        </div>
-        <!-- /.inquiry__wrapper-left -->
-        <div class="inquiry__wrapper-right">
-          <h3 class="inquiry__ttl">お問い合わせ</h3>
-          <p class="inquiry__text">
-            サービスに関するお問い合わせ
-            ならびに企業活動に関するお問い合わせはこちら</p>
-          <div class="inquiry__button-area">
-            <a href="" class="inquiry__button-jump button-top-gray">
-              <span class="button-top-gray__arrow">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt="">
-              </span>
-              <div class="inquiry__button-text">contact</div>
-            </a>
+          <!-- /.inquiry__wrapper-left -->
+          <div class="inquiry__wrapper-right">
+            <h3 class="inquiry__ttl">お問い合わせ</h3>
+            <p class="inquiry__text">
+              サービスに関するお問い合わせ
+              ならびに企業活動に関するお問い合わせはこちら</p>
+            <div class="inquiry__button-area">
+              <a href="" class="inquiry__button-jump button-top-gray">
+                <span class="button-top-gray__arrow">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/img_top_uparrow_black.png" alt="">
+                </span>
+                <div class="inquiry__button-text">contact</div>
+              </a>
+            </div>
           </div>
+          <!-- /.inquiry__wrapper-right -->
         </div>
-        <!-- /.inquiry__wrapper-right -->
+        <!-- /.inquiry__contents -->
       </div>
-      <!-- /.inquiry__contents -->
-    </div>
-  </section>
+    </section>
   </div><!-- /.about-us__bg-circle -->
 </main>
 <?php get_footer(); ?>
