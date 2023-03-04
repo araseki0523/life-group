@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.swiper {
+    height: 100vh;
+    @include mq(md) {
+        height: 100%;
+    }
+}
+
+.swiper-wrapper {
+    height: inherit;
+}
+
+.swiper-slide img {
+    display: block;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: inherit;
+}
+
+
